@@ -1,0 +1,20 @@
+{
+	"name": "AdBlock4Reddit",
+	"version": "1.0",
+    "description": "Blocking Reddit Ads",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": ["*://www.reddit.com/*"],
+			"js": ["action.js"]
+		}
+	],
+    "icons": {
+        "16": "icon16.png",
+        "24": "icon24.png",
+        "32": "icon32.png",
+        "64": "icon64.png",
+        "128": "icon128.png",
+        "256": "icon256.png"
+        }
+}
