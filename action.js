@@ -14,4 +14,18 @@ function s () {
         if(titleitem.innerHTML == "promoted")
             item.style.display = "none";
     }
+    
+    
+    
+    var iframes = document.getElementsByTagName("iframe");
+    
+    for (var i = 0; i < iframes.length; i++)
+        {
+            var item = iframes[i];
+            
+            if(item.src.search("//redditad.com//"))
+                if(item.parentElement.id.search("aax_sidebar") == 0)
+                    item.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.style.display = "none";
+        }
 }
+
